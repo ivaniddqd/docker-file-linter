@@ -1,5 +1,7 @@
 ---
-on:
+name: pipelinecomponents
+
+on: # yamllint disable-line rule:truthy
   push:
     branches:
       - master
