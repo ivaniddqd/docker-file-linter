@@ -7,8 +7,8 @@ on:
 jobs:
   lint:
     name: Lint
-    runs-on: ubuntu-20.04
-    container: pipelinecomponents/hadolint:0.10.1
+    runs-on: ubuntu-latest
+    container: pipelinecomponents/hadolint:latest
     steps:
       - uses: actions/checkout@v3
       - name: Run hadolint
