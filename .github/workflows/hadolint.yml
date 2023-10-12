@@ -35,5 +35,7 @@ jobs:
       - name: Run jsonlint
         run: |
           ls -als
+          cat test.json
           jsonlint -c  -t '  ' test.json
           jsonlint -t '  ' *.json
+          cat test.json
