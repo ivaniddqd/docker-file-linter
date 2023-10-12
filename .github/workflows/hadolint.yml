@@ -33,4 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run jsonlint
-        run: jsonlint -t '  ' *.json
+        run: |
+          ls -als
+          jsonlint -c  -t '  ' test.json
+          jsonlint -t '  ' *.json
