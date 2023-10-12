@@ -13,7 +13,7 @@ The linters included in this repository are:
 - JSONLint - A linter for JSON files to detect syntax errors and formatting issues.
 - YAMLLint - A linter for YAML files to verify syntax and formatting.
 - MarkdownLint - A linter for Markdown files to identify structural and stylistic
-errors in documentation.
+  errors in documentation.
 
 ## How to Use
 
