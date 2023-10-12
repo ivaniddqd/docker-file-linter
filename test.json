@@ -2,9 +2,9 @@
   "type": "message",
   "attachments": [
     {
-        "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentType": "application/vnd.microsoft.card.adaptive",
       "contentUrl": null,
-                      "content": {
+      "content": {
         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
         "type": "AdaptiveCard",
         "version": "1.2",
@@ -12,22 +12,21 @@
           {
             "type": "TextBlock",
             "size": "Medium",
-                    "weight": "Bolder",
-              "text": "**PROJECT_PATH**: ${PROJECT_PATH}",
-             "isSubtle": false,
+            "weight": "Bolder",
+            "text": "**PROJECT_PATH**: ${PROJECT_PATH}",
+            "isSubtle": false,
             "wrap": true
           },
           {
             "type": "ColumnSet",
-              "columns": [
+            "columns": [
               {
                 "type": "Column",
                 "items": [
                   {
                     "type": "Image",
-                    
                     "style": "Person",
-                      "url": "https://about.gitlab.com/images/press/press-kit-icon.svg",
+                    "url": "https://about.gitlab.com/images/press/press-kit-icon.svg",
                     "size": "Medium"
                   }
                 ],
@@ -74,7 +73,4 @@
       }
     }
   ]
-  
 }
-
-
