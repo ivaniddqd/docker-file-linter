@@ -41,7 +41,7 @@ jobs:
           no-fail: true
 
       - name: test
-        run: ls -als
+        run: cat hadolint-results.sarif
 
       - name: Upload analysis results to GitHub
         uses: github/codeql-action/upload-sarif@v2
