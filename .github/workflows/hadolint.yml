@@ -29,10 +29,13 @@ jobs:
   jsonlint:
     name: jsonlint
     runs-on: ubuntu-latest
-    container: pipelinecomponents/jsonlint:latest
+    container: cytopia/jsonlint:latest
     steps:
       - uses: actions/checkout@v3
       - name: Run jsonlint
         run: |
-          find . -not -path './.git/*' -name '*.json' -type f -print0 |
-          parallel --will-cite -k -0 -n1 jsonlint
+          ls -als
+          cat test.json
+          jsonlint -c  -t '  ' -f warn -e test.json
+          jsonlint -t '  ' -f warn *.json
+          cat test.json
