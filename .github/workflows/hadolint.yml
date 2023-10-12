@@ -23,7 +23,7 @@ jobs:
     container: pipelinecomponents/yamllint:latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run hadolint
+      - name: Run yamllint
         run: yamllint .
 
   jsonlint:
@@ -32,7 +32,7 @@ jobs:
     container: pipelinecomponents/jsonlint:latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run hadolint
+      - name: Run jsonlint
         run: |
           find . -not -path './.git/*' -name '*.json' -type f -print0 |
           parallel --will-cite -k -0 -n1 jsonlint -q
